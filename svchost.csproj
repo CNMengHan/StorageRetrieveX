@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <ApplicationIcon>E:\World\ico\awa1.ico</ApplicationIcon>
+
+        <AssemblyTitle>StorageRetrieveX</AssemblyTitle>   <!-- 程序标题 -->
+        <AssemblyDescription>StorageRetrieveX</AssemblyDescription> <!-- 程序描述 -->
+        <AssemblyCompany>StorageRetrieveX</AssemblyCompany>    <!-- 公司名称 -->
+        <Company>StorageRetrieveX</Company>    <!-- 公司名称 -->
+        <AssemblyProduct>StorageRetrieveX</AssemblyProduct>    <!-- 产品名称 -->
+        <AssemblyCopyright>https://github.com/CNMengHan</AssemblyCopyright> <!-- 版权信息 -->
+
+        <Title>StorageRetrieveX</Title>    <!-- 包的友好标题，通常用于 UI 显示 -->
+        <Product>StorageRetrieveX</Product>    <!-- 程序集清单的产品名称 -->
+
+        <OutputName>StorageRetrieveX</OutputName>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="E:\World\ico\awa1.ico" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="LynCandy.txt" />
+      <EmbeddedResource Include="LynCandy.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+</Project>
